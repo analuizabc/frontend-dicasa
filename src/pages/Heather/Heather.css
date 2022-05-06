@@ -1,0 +1,39 @@
+.listItemText{
+    color: #6F4834;
+    margin-left: 8px; 
+    height: 80px;
+}
+
+.list{
+    width: 240px;
+}
+
+.list2{
+    width: 280px;
+}
+
+.toolBar{
+    background-color: #FFF7DE;
+    width: 1600px;
+    height: 125px;
+}
+
+.img{
+    margin-bottom: 15px;
+    margin-right: 70px;
+    margin-left: 110px;
+    height: 140px;
+    width: 250px;
+}
+
+.img2{
+    height: 42px;
+    width: 42px;
+}
+
+.h1{
+    font-family: 'Roboto Slab', serif; 
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+}

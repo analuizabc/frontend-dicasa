@@ -5,6 +5,7 @@ import Cardapio from "./pages/Cardapio";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Perfil from "./pages/Perfil";
+import Heather from "./pages/Heather";
 
 function Routes() {
     return(
@@ -15,6 +16,7 @@ function Routes() {
               <Route path="/home" component={Home}/>
               <Route path="/login" component={Login}/>
               <Route path="/perfil" component={Perfil}/>
+              <Route path="/temp" component={Heather}/>
           </Switch>
         </BrowserRouter>
     )
