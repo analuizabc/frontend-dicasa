@@ -4,23 +4,18 @@ import { IconContext } from "react-icons/lib";
 import { FaHome } from "react-icons/fa";
 import {  RiUserFill } from "react-icons/ri"
 import "./Heather.css";
-import { useHistory} from "react-router-dom";
 
 
-function Heather() {
-    const history = useHistory();
-
-    function handleClick(pathName){
-        history.push(pathName);
-    }
-
+function Heather(props) {
+    
     return (
-        <AppBar>
+        <>
+        <AppBar position="static">         
             <Toolbar className="toolBar">
                <img src="/images/LOGO3.png" alt="logodicasa" className="img"/>
             <List className="list">   
                 <ListItem button onClick={() => {
-                    handleClick("/home");
+                    window.location.href="/home";
                     }}
                   >
                     <IconContext.Provider value={{ color: "#6F4834", size: "49px" }}>
@@ -33,7 +28,7 @@ function Heather() {
             </List>
             <List className="list2">
                 <ListItem button onClick={() => {
-                    handleClick("/cardapio");
+                    window.location.href="/cardapio";
                     }}>
                     <img src="/images/sacola2.png" alt="sacola" className="img2"/>
                     <ListItemText className="listItemText">
@@ -43,7 +38,7 @@ function Heather() {
               </List>
               <List className="list">
                 <ListItem button onClick={() => {
-                    handleClick("/perfil");
+                    window.location.href="/perfil";
                     }}>
                     <IconContext.Provider value={{ color: "#6F4834", size: "48px" }}>
                       <RiUserFill />
@@ -55,6 +50,8 @@ function Heather() {
               </List>
             </Toolbar>
         </AppBar>
+     {props.children}
+     </>
     );
 }
 

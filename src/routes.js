@@ -11,15 +11,25 @@ function Routes() {
     return(
         <BrowserRouter>
           <Switch>
-              <Route path="/cadastro" component={Cadastro}/>
-              <Route path="/cardapio" component={Cardapio}/>
-              <Route path="/home" component={Home}/>
-              <Route path="/login" component={Login}/>
-              <Route path="/perfil" component={Perfil}/>
-              <Route path="/temp" component={Heather}/>
+              <Route exact path="/cadastro" component={Cadastro}/>
+              
+              <Route exact path="/login" component={Login}/>
+              <Route exact path="/perfil" component={Perfil}/>
+              <Route path="/" component={UserHeather}/>
           </Switch>
         </BrowserRouter>
     )
+}
+
+function UserHeather() {
+    return (
+        <Heather>
+            <Switch>
+                <Route exact path="/cardapio" component={Cardapio}/>
+                <Route exact path="/home" component={Home}/>
+            </Switch>
+        </Heather>
+    );
 }
 
 export default Routes;
