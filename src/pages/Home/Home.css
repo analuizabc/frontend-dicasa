@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.caracol{
+    width: 1349px;
+}
+
+.note{
+    background-color: #E8CD98;
+}
+
+.noteTitle{
+    
+    margin-top: 50px;
+    color: #6F4834; 
+    
+}
+
+.noteDescription{
+    margin-top: 10px ;
+}
+
+.texto{
+    font-family: 'Roboto Slab', serif; 
+    margin-left: 240px;
+    margin-right: 220px;
+    font-size: 2em;
+    font-weight: 600;
+    
+}
+
+.titulo{
+    font-family: 'Roboto Slab', serif; 
+    margin-left: 200px;
+    font-size: 3.3em;
+    font-weight: 600;
+    
+}
+
+.baixo{
+    display: flex;
+    margin-left: 300px;
+    font-size: 3em;
+
+}
+
+.linha{
+    margin-left: 90px;
+    color: #6F4834;
+}
