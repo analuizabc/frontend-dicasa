@@ -15,6 +15,8 @@ function Routes() {
               <Route exact path="/login" component={Login}/>
               <Route exact path="/perfil" component={Perfil}/>
               <Route path="/" component={UserHeather}/>
+              <Route exact path="/home" component={Home}/>
+              <Route exact path="/cardapio" component={Cardapio}/>
           </Switch>
         </BrowserRouter>
     )
