@@ -1,14 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Form } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import "./Login.css"
 
 
 function Login() {
+    const history=useHistory();
     return (
         <div className="base">
             <div className="container">
-                <Link to="home">Home</Link>
+                <button onClick={()=>{history.push("/home");}}>Home</button>
                 <h1>Login</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

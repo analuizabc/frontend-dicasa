@@ -10,11 +10,11 @@ function Routes() {
     return(
         <BrowserRouter>
           <Switch>
-              <Route path="/cadastro" component={Cadastro}/>
-              <Route path="/cardapio" component={Cardapio}/>
-              <Route path="/home" component={Home}/>
-              <Route path="/login" component={Login}/>
-              <Route path="/perfil" component={Perfil}/>
+              <Route exact path="/cadastro" component={Cadastro}/>
+              <Route exact path="/cardapio" component={Cardapio}/>
+              <Route exact path="/home" component={Home}/>
+              <Route exact path="/login" component={Login}/>
+              <Route exact path="/perfil" component={Perfil}/>
           </Switch>
         </BrowserRouter>
     )
