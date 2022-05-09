@@ -7,6 +7,7 @@
 
 .caracol{
     width: 1349px;
+    margin-bottom: 60px;
 }
 
 .note{
@@ -25,30 +26,68 @@
 }
 
 .texto{
-    font-family: 'Roboto Slab', serif; 
-    margin-left: 240px;
-    margin-right: 220px;
-    font-size: 2em;
-    font-weight: 600;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+
+    margin-left: 100px;
+    margin-right: 80px;
+    
     
 }
 
 .titulo{
-    font-family: 'Roboto Slab', serif; 
-    margin-left: -359px;
-    font-size: 3.3em;
-    font-weight: 600;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 92px; 
+    margin-left: -500px;
+    
     
 }
 
 .baixo{
     display: flex;
-    margin-left: 300px;
-    
+    margin-bottom: 40px;
+    margin-top: 40px;
 
 }
 
 .linha{
     margin-left: 90px;
     color: #6F4834;
+    margin-top: 40px;
+}
+
+.saudavel {
+    margin-left: 160px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 53px;
+}
+
+.saboroso {
+    margin-left: 160px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 53px;
+
+    
+}
+
+.comida {
+    margin-left: 120px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 53px;
+    
 }
