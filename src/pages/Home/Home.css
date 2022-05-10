@@ -12,6 +12,7 @@
 
 .note{
     background-color: #E8CD98;
+   
 }
 
 .noteTitle{
@@ -52,14 +53,18 @@
 .baixo{
     display: flex;
     margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 20px;
 
 }
 
-.linha{
-    margin-left: 90px;
-    color: #6F4834;
+.linhaStyle{
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 40px;
+    background-color: #6F4834;
+   
 }
 
 .saudavel {

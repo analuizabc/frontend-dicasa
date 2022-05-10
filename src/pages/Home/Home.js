@@ -41,7 +41,7 @@ function Home() {
         <div className="noteDescription"><Typography><h1 className="texto">Nosso objetivo é transformar a visão das pessoas sobre alimentação e culinária, unindo o saudável ao saboroso. Nosso foco é trazer receitas tradicionais, adicionando ao cardápio de inúmeras pessoas, refeições caseiras e naturais. Comer bem importa! 
         </h1></Typography></div>
         </div>
-         <Typography><h6 className="linha">_________________________________________________________________________________________________________________________________</h6></Typography>
+        <div className="linhaStyle"></div>
         <div className="baixo">   
             <Typography><h6 className="saudavel">SAUDAVEL</h6></Typography>
             <Typography><h6 className="saboroso">SABOROSO</h6></Typography>
