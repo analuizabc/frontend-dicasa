@@ -1,0 +1,40 @@
+.note{
+    margin-bottom: 100px;
+}
+
+.produtos{
+    width: 340px;
+    height: 410px;
+    margin-bottom: -30px;
+}
+
+.noteTitle{
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align:left;
+    margin-left: 10px;
+    margin-bottom: -10px;
+
+}
+
+.noteDescription{
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+    .button{
+        box-shadow: 4px 4px 4px 0px #00000040;
+        height: 65px;
+        width: 257px;
+        margin-left: 12%;
+        margin-top: 30px;
+
+    }
