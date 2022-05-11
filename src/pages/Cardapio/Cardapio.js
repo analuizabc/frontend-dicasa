@@ -85,7 +85,7 @@ function Cardapio() {
     return (
      <div className="cardapio">
         <img src="/images/Cardapio.png" alt="logocardapio" className="logocarda"></img>
-        <Input type="text" placeholder={ BiSearch } className="barra"></Input>
+        <Input type="text"  className="barra"></Input>
        
         
         <div className="noteContainer">
@@ -94,6 +94,7 @@ function Cardapio() {
             ))}
 
         </div>
+        <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
      </div>
 
     );

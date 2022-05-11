@@ -30,11 +30,35 @@
     margin-left: 10px;
 }
 
-    .button{
-        box-shadow: 4px 4px 4px 0px #00000040;
-        height: 65px;
-        width: 257px;
-        margin-left: 12%;
-        margin-top: 30px;
+.button{
+    box-shadow: 4px 4px 4px 0px #00000040;
+    height: 65px;
+    width: 257px;
+    margin-left: 12%;
+    margin-top: 30px;
+    background-color: #6F4834;
+    border-radius: 10px;
+    border-style: hidden;
+    }
 
+.button:hover{
+    background-color: #D7F80D;
+    }
+
+.selecionar{
+    color: #FFF7DE;
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    }
+
+    .nome{
+        color: #000;
+    }
+
+    .valor{
+        color: #6F4834;
     }
