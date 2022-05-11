@@ -11,12 +11,13 @@ function Routes() {
     return(
         <BrowserRouter>
           <Switch>
-              <Route exact path="/cadastro" component={Cadastro}/>
-              <Route exact path="/login" component={Login}/>
-              <Route exact path="/perfil" component={Perfil}/>
               <Route path="/" component={UserHeather}/>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/cardapio" component={Cardapio}/>
+              <Route exact path="/cadastro" component={Cadastro}/>
+              <Route exact path="/perfil" component={Perfil}/>
+              <Route exact path="/login" component={Login}/>
+
           </Switch>
         </BrowserRouter>
     )
@@ -28,6 +29,7 @@ function UserHeather() {
             <Switch>
                 <Route exact path="/cardapio" component={Cardapio}/>
                 <Route exact path="/home" component={Home}/>
+                <Route exact path="/login" component={Login}/>
             </Switch>
         </Heather>
     );
