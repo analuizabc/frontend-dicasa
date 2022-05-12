@@ -1,10 +1,10 @@
+
 .container {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 5%;
+
 }
-
-
 
 .caracol{
     width: 1349px;
@@ -12,48 +12,46 @@
 
 .note{
     background-color: #E8CD98;
+    
 }
 
 .noteTitle{
     
-    margin-top: 50px;
+    margin-top: 3%;
     color: #6F4834; 
     
 }
 
 .noteDescription{
-    margin-top: 10px ;
+    margin-top: 1.5% ;
 }
 
 .texto{
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-
-    margin-left: 100px;
-    margin-right: 80px;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-left: 9%;
+    margin-right: 8%;
     
     
 }
 
 .titulo{
+    display: flex;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 400;
-    font-size: 70px;
-    line-height: 92px; 
-    margin-left: -500px;
-    
-    
+    font-size: 4.5em;
+    line-height: 1.3em; 
+    margin-left: -75%;
 }
 
 .baixo{
     display: flex;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 3%;
+    padding: 1.6%;
 
 }
 
@@ -61,37 +59,41 @@
     height: 1px;
     width: 80%;
     margin-left: 10%;
-    margin-top: 80px;
+    margin-top: 6%;
     background-color: #6F4834;
    
 }
 
 .saudavel {
-    margin-left: 160px;
+    margin-left: 75%;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 260%;
+    line-height: 130%;
 }
 
 .saboroso {
-    margin-left: 160px;
+    margin-left: 140%;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 260%;
+    line-height: 130%;
 
     
 }
 
 .comida {
-    margin-left: 120px;
+    margin-left: 430px;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 260%;
+    line-height: 130%;
     
 }
+
+
+
+    

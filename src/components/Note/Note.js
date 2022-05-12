@@ -8,7 +8,7 @@ function Note({ note }) {
         <img src={note.src} alt="carda" className="produtos"></img>
         <div className="noteTitle"><text className="nome">{note.title}</text></div>
         <div className="noteDescription"><text className="valor">{note.description}</text></div>
-        <button className="button" ><h4 className="selecionar">Selecionar</h4></button>{' '}
+        <button className="button" id=""><h4 className="selecionar">Selecionar</h4></button>{' '}
     </div>;
 }
 

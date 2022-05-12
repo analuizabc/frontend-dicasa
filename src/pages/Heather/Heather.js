@@ -9,8 +9,8 @@ import "./Heather.css";
 function Heather(props) {
     
     return (
-        <>
-        <AppBar position="static">         
+        <div className="body">
+        <AppBar position="static" className="appbar">         
             <Toolbar className="toolBar">
                <img src="/images/LOGO3.png" alt="logodicasa" className="img"/>
             <List className="list">   
@@ -51,7 +51,7 @@ function Heather(props) {
             </Toolbar>
         </AppBar>
      {props.children}
-     </>
+     </div>
     );
 }
 

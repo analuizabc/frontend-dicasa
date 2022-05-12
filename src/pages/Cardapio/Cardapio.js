@@ -2,7 +2,7 @@ import { Input } from "@mui/material";
 import React from "react";
 import "./Cardapio.css"
 import Note from "../../components/Note";
-import { BiSearch } from "react-icons/bi"
+
 
 
 const notes = [
@@ -87,7 +87,6 @@ function Cardapio() {
         <img src="/images/Cardapio.png" alt="logocardapio" className="logocarda"></img>
         <Input type="text"  className="barra"></Input>
        
-        
         <div className="noteContainer">
             {notes.map((note) => (
             <Note key={note.id} note={note} />

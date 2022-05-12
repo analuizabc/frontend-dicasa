@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import { Carousel, } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import "./Home.css"
 
 function Home() {
@@ -10,9 +10,9 @@ function Home() {
         <Carousel>
             <Carousel.Item>
                 <img
-                 src="/images/Component2.png" 
-                 alt="fotohome" 
-                 className="caracol1"    
+                 src="/images/component2.png" 
+                 alt="First slide" 
+                 className="d-block w-100"    
                 />
             </Carousel.Item>
             <Carousel.Item>
