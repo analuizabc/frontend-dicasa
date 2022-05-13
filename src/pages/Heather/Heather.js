@@ -1,16 +1,14 @@
 import { AppBar, List, ListItem, ListItemText, Toolbar, Typography, } from "@mui/material"
 import React from "react";
-import { IconContext } from "react-icons/lib";
-import { FaHome } from "react-icons/fa";
-import {  RiUserFill } from "react-icons/ri"
 import "./Heather.css";
 
 
 function Heather(props) {
     
     return (
-        <div className="body">
-        <AppBar position="static" className="appbar">         
+        <div className="appbar">
+        <AppBar position="static">     
+          <div className=" toolBar">
             <Toolbar className="toolBar">
                <img src="/images/LOGO3.png" alt="logodicasa" className="img"/>
             <List className="list">   
@@ -18,9 +16,7 @@ function Heather(props) {
                     window.location.href="/home";
                     }}
                   >
-                    <IconContext.Provider value={{ color: "#6F4834", size: "49px" }}>
-                      <FaHome />
-                    </IconContext.Provider>
+                    <img src="/images/iconecasa.png" alt="casa" className="img2"></img>
                     <ListItemText className="listItemText">         
                         <Typography><h1 className="h1">Home</h1></Typography>
                     </ListItemText>
@@ -40,15 +36,14 @@ function Heather(props) {
                 <ListItem button onClick={() => {
                     window.location.href="/perfil";
                     }}>
-                    <IconContext.Provider value={{ color: "#6F4834", size: "48px" }}>
-                      <RiUserFill />
-                    </IconContext.Provider>
+                    <img src="/images/iconeperfil.png" alt="perfil" className="img2"/>
                     <ListItemText className="listItemText">
                         <Typography><h1 className="h1">Perfil</h1></Typography>
                     </ListItemText>
                 </ListItem>
               </List>
             </Toolbar>
+            </div>    
         </AppBar>
      {props.children}
      </div>

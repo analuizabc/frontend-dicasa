@@ -15,13 +15,16 @@
 .toolBar{
     background-color: #FFF7DE;
     height: 100%;
+    width: 100%;
+    
 }
 
 .img{
+    object-fit: fill;
     margin-bottom: 0.3%;
     margin-right: 5%;
     margin-left: 8.5%;
-    height: 129.76px;
+    height: 90%;
     width: 17%;
 }
 
@@ -38,10 +41,33 @@
 }
 
 .appbar{
-    display: flex;
+   
+    width: 100%;
+    height: 18%;
 }
 
 
 
+@media (max-width:1235px){
+    .appbar{
+        
+        width: 100%;
+        height: 18%;
+    }
+    .img2{
+        height: 2.7em;
+        width: 2.7em;
+    }
+}
 
+@media (max-width:950px){
+    .appbar{
+        
+        height: 14%;
+    }
+    .img2{
+        height: 2em;
+        width: 2em;
+    }
+}
     
