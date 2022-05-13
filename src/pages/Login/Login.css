@@ -1,8 +1,11 @@
 .container{
     display: flex;
     flex-direction: column;
-    max-width: 423px;
+    max-width: 1028px;
     align-items: center;
+    background-color: #FFF7DE;
+    margin-top: 80px;
+    margin-bottom:80px;
 }
 
 .base{
@@ -16,18 +19,28 @@
     flex-direction: column;
     margin-left: 16px;
     margin-right: 16px;
+    margin-bottom: 120px
 }
 .fundo{
     background-color: #E8CD98;
 }
 .texto{
     color: #6E4834;
-    margin-left: 8px; 
+    margin-left: 1px; 
     height: 36px;
-    font-size: 36px;
+    font-size: 30px;
+    font-family: 'Roboto Slab', bold; 
+}
+.texto2 {
+    color: #6E4834;
+    margin-left: 25px; 
+    height: 30px;
+    font-size: 12px;
 }
 .noteTitle{
     margin-top: 50px;
     color: #6E4834; 
     height: 70px;
+    font-size: 50px;
+    font-family: 'Roboto Slab', bold; 
 }
