@@ -1,11 +1,13 @@
-import { AppBar, List, ListItem, ListItemText, Toolbar, Typography, } from "@mui/material"
+import { AppBar, List, ListItem, ListItemText, Toolbar, Typography, Drawer } from "@mui/material"
 import React from "react";
 import "./Heather.css";
+
 
 
 function Heather(props) {
     
     return (
+        <>
         <div className="appbar">
         <AppBar position="static">     
           <div className=" toolBar">
@@ -47,6 +49,27 @@ function Heather(props) {
         </AppBar>
      {props.children}
      </div>
+    
+    <div >
+     <Drawer open={true} className="menu">
+         <List className="drawer">
+             <ListItem button>
+             <img src="/images/iconecasa.png" alt="casa" className="img2"></img>   
+             <Typography><h1 className="nomemenu">Home</h1></Typography>
+             </ListItem>
+             <ListItem button>
+             <img src="/images/sacola2.png" alt="sacola" className="img2"/>   
+             <Typography><h1 className="nomemenu">Produtos</h1></Typography>
+             </ListItem>
+             <ListItem button>
+             <img src="/images/iconeperfil.png" alt="perfil" className="img2"/>
+             <Typography><h1 className="nomemenu">Perfil</h1></Typography>
+             </ListItem>   
+             
+         </List>
+     </Drawer>
+     </div>
+     </>
     );
 }
 

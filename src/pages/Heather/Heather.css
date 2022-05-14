@@ -47,6 +47,7 @@
     height: 18%;
 }
 
+ 
 
 
 @media (max-width:1235px){
@@ -72,3 +73,32 @@
     }
 }
     
+@media screen and (max-width:376px){
+    .appbar{
+        display: none;
+    }
+    .img2{ 
+        margin-left: 10px;
+        height: 40px;
+        width: 41px;
+    }
+    .drawer{
+        background-color: #FFF7DE;
+        width: 270px;
+    }
+    .nomemenu{
+        font-family: 'Roboto Slab', serif; 
+        font-size: 1.5em;
+        font-weight: 500;
+        color: #6F4834;
+        height: 14px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:378px){
+   .menu{
+        display: none;
+    }
+    
+}
