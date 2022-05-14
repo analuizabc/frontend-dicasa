@@ -1,6 +1,5 @@
-@import url('https://rsms.me/inter/inter.css%27');
-html { font-family: 'Inter', sans-serif; }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap');
+html { font-family: 'Roboto Slab', serif; }
 *   { 
     box-sizing: border-box;
     margin: 0;
