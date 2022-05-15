@@ -31,7 +31,7 @@
     font-weight: 700;
     line-height: 42px;
     text-align: left;
-    margin-left: 85px;
+    margin-left: 86px;
 }
 
 .button{
@@ -68,3 +68,12 @@
     .valor{
         color: #6F4834;
     }
+
+@media (max-width:420px){
+    .note{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: -25%;
+    }
+
+}

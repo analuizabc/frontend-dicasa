@@ -34,6 +34,17 @@
     width: 17%;
 }
 
+.img3{
+    
+    height: 18%;
+    width: 31%;
+}
+
+.logomobile{
+    display: flex;
+    justify-content: right;
+}
+
 .h1{
     font-family: 'Roboto Slab', serif; 
     font-size: 2em;
@@ -47,7 +58,6 @@
     height: 18%;
 }
 
- 
 
 
 @media (max-width:1235px){
@@ -72,8 +82,14 @@
         width: 2em;
     }
 }
+
+@media (max-width:751px){
+    .h1{
+        font-size: 1em;
+    }
+}
     
-@media screen and (max-width:376px){
+@media screen and (max-width:420px){
     .appbar{
         display: none;
     }
@@ -84,7 +100,7 @@
     }
     .drawer{
         background-color: #FFF7DE;
-        width: 270px;
+        width: 100%;
     }
     .nomemenu{
         font-family: 'Roboto Slab', serif; 
@@ -93,12 +109,14 @@
         color: #6F4834;
         height: 14px;
         margin-left: 20px;
-    }
+    } 
 }
 
-@media screen and (min-width:378px){
+@media screen and (min-width:420px){
    .menu{
         display: none;
+        
     }
+    
     
 }

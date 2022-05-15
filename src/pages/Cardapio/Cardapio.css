@@ -98,3 +98,27 @@
         margin-bottom: 30px;
     }
 }
+
+@media (max-width:420px){
+
+    .logocarda{
+        margin-left: 0;
+    }
+
+    .logofinal{  
+        margin-top: -80px;
+        width: 60%;
+    }
+
+    .barra{
+        margin-left: 15%;
+        height: 33px;
+        width: 70%;
+        margin-top: 10%;
+    }
+
+    .noteContainer{
+        margin-top: -20%;
+    }
+
+}

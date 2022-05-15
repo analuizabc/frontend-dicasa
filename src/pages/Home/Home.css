@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-position-x: center ;
     background-position-y: center;
+    background-size: contain;
 }
 
 .caracol{
@@ -147,4 +148,55 @@
         line-height: 1.3em; 
         
     }
+}
+
+
+@media (max-width:420px){
+
+    .texto{
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.3em;
+        margin-left: 10.5%;
+        margin-right: 8%;
+    }
+    
+    .titulo{
+        display: flex;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.3em; 
+        
+    }
+
+    .saudavel {
+    
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 130%;
+    }
+    
+    .saboroso {
+        margin-right: 7%;
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 130%;
+        margin-left: 7%;
+        
+    }
+    
+    .comida {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 130%;
+    }
+
 }
