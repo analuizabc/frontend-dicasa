@@ -1,21 +1,40 @@
-.container{
+.containerCadastro{
     display: flex;
     flex-direction: column;
-    max-width: 423px;
+    height: 50%;
+    width: 90%;
+    background-color: #FFF7DE;
+    max-width: 600px;
     align-items: center;
-    flex-grow: 1;
+   
 }
 
 .base{
     height: 100%;
+    width: 100%;
+    background-color:#E8CD98 ;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.inputs{
+.campoFormulario{
     display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    margin-right: 16px;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    align-items: center;
 }
+
+.campoLabel{
+    width: 80%;
+
+}
+
+.campoCaixa{
+    width: 70% ;
+    height: 30px;
+    
+}
+
