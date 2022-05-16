@@ -24,18 +24,17 @@ function Cadastro() {
                 <div>
                     <h1 className="nomeTitulo">Cadastre-se</h1>
                 </div>
-                <div>
-                    <Form> 
-                        <div>
+                    <Form className="formCadastro"> 
+                        
                             <Form.Group className="campoFormulario" controlId="formBasicNomeDeUsuario">
                             <Form.Label className="campoLabel">Nome de usuário:</Form.Label>
-                            <Form.Control className="campoCaixa"type="text" placeholder="" 
+                            <Form.Control className="campoCaixa" type="text" placeholder="" 
                             onChange={(e)=>setNomeDeUsuario(e.target.value)} />
                             <Form.Text className="textCampo">
                             </Form.Text>
                             </Form.Group>
-                        </div>    
                         
+
                         <div>
                             <Form.Group className="campoFormulario" controlId="formBasicEmail">
                             <Form.Label className="campoLabel">Endereço de e-mail:</Form.Label>
@@ -65,7 +64,7 @@ function Cadastro() {
                         <div>
                             <Form.Group className="campoFormulario" controlId="formBasicCidade">
                             <Form.Label className="campoLabel">Cidade:</Form.Label>
-                            <Form.Control className="campoCaixa"type="text" placeholder="" 
+                            <Form.Control className="campoCaixa" type="text" placeholder="" 
                              onChange={(e)=>setCidade(e.target.value)} />
                             <Form.Text className="textCampo">
                             </Form.Text>
@@ -75,7 +74,7 @@ function Cadastro() {
                         <div>
                             <Form.Group className="campoFormulario" controlId="formBasicEndereço">
                             <Form.Label className="campoLabel">Endereço:</Form.Label>
-                            <Form.Control className="campoCaixa"type="text" placeholder="" 
+                            <Form.Control className="campoCaixa" type="text" placeholder="" 
                              onChange={(e)=>setEndereço(e.target.value)} />
                             <Form.Text className="textCampo">
                             </Form.Text>
@@ -88,7 +87,6 @@ function Cadastro() {
                         </div>
 
                     </Form>
-                </div>
              </div>
          </div>
     );
