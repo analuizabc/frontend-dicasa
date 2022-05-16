@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Perfil from "./pages/Perfil";
 import Heather from "./pages/Heather";
+import Footer from "./pages/Footer";
 
 function Routes() {
     return(
@@ -14,9 +15,11 @@ function Routes() {
               <Route exact path="/cadastro" component={Cadastro}/>
               <Route exact path="/login" component={Login}/>
               <Route exact path="/perfil" component={Perfil}/>
+              <Route exact path="/footer" component={Footer}/>
               <Route path="/" component={UserHeather}/>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/cardapio" component={Cardapio}/>
+              
           </Switch>
         </BrowserRouter>
     )
