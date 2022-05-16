@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import "./Login.css"
 
@@ -12,27 +12,31 @@ function Login() {
     function login(){
         history.push("home");
     }
-
+    function cadastro(){
+        history.push("cadastro");
+    }
     return (
         <div className="fundo">
             <div className="base">
                 <div className="container">
                 <h1 className="noteTitle">Login</h1>
-                    <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label className="texto">Email:</Form.Label>
-                         <Form.Control type="email" placeholder="" onChange={(e)=>setEmail(e.target.value)}/>
-                         <Form.Text className="text-muted"></Form.Text>
-                     </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                         <Form.Label className="texto">Senha:</Form.Label>
-                         <Form.Control type="password" placeholder="" onChange={(e)=>setPassword(e.target.value)} />
+                <Form>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label className="texto">E-mail:</Form.Label>
+                    <Form.Control className="caixa" type="email" placeholder="" onChange={(e)=>setEmail(e.target.value)}/>
+                    <Form.Text className="text-muted"></Form.Text>
                     </Form.Group>
-                            <h2 className="texto2">Não tem login? Faça seu cadastro aqui</h2>
-                            <div className="inputs">
-                            <button onClick={login}>Acessar</button>
-                            </div>
-                    </Form>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label className="texto">Senha:</Form.Label>
+                    <Form.Control type="password" placeholder="" onChange={(e)=>setPassword(e.target.value)} />
+                    </Form.Group>
+                        <h2 className="texto2">Não tem login? Faça seu cadastro
+                        <button onClick={cadastro} className='botaolink'> aqui</button>
+                        </h2>
+                        <div className="inputs">
+                        <button onClick={login} className='botao'>Acessar</button>
+                        </div>
+                </Form>
                 </div>
             </div>
         </div>
