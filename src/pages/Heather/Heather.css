@@ -1,38 +1,122 @@
 .listItemText{
     color: #6F4834;
-    margin-left: 8px; 
-    height: 35px;
+    margin-left: 5.5%; 
+    height: 2.4em;
 }
 
 .list{
-    width: 240px;
+    width: 60%;
 }
 
 .list2{
-    width: 280px;
+    width: 65%;
 }
 
 .toolBar{
     background-color: #FFF7DE;
-    height: 125px;
+    height: 100%;
+    width: 100%;
+    
 }
 
 .img{
-    margin-bottom: 3px;
-    margin-right: 70px;
-    margin-left: 110px;
-    height: 129.76pxpx;
-    width: 230px;
+    object-fit: fill;
+    margin-bottom: 0.3%;
+    margin-right: 5%;
+    margin-left: 8.5%;
+    height: 90%;
+    width: 17%;
 }
 
-.img2{
-    height: 42px;
-    width: 42px;
+.img2{ 
+    margin-top: 2%;
+    height: 4%;
+    width: 17%;
+}
+
+.img3{
+    
+    height: 18%;
+    width: 31%;
+}
+
+.logomobile{
+    display: flex;
+    justify-content: right;
 }
 
 .h1{
     font-family: 'Roboto Slab', serif; 
-    font-size: 36px;
+    font-size: 2em;
     font-weight: 600;
-    line-height: 45px;
+    line-height: 20%;
+}
+
+.appbar{
+   
+    width: 100%;
+    height: 18%;
+}
+
+
+
+@media (max-width:1235px){
+    .appbar{
+        
+        width: 100%;
+        height: 18%;
+    }
+    .img2{
+        height: 2.7em;
+        width: 2.7em;
+    }
+}
+
+@media (max-width:950px){
+    .appbar{
+        
+        height: 14%;
+    }
+    .img2{
+        height: 2em;
+        width: 2em;
+    }
+}
+
+@media (max-width:751px){
+    .h1{
+        font-size: 1em;
+    }
+}
+    
+@media screen and (max-width:420px){
+    .appbar{
+        display: none;
+    }
+    .img2{ 
+        margin-left: 10px;
+        height: 40px;
+        width: 41px;
+    }
+    .drawer{
+        background-color: #FFF7DE;
+        width: 100%;
+    }
+    .nomemenu{
+        font-family: 'Roboto Slab', serif; 
+        font-size: 1.5em;
+        font-weight: 500;
+        color: #6F4834;
+        height: 14px;
+        margin-left: 20px;
+    } 
+}
+
+@media screen and (min-width:420px){
+   .menu{
+        display: none;
+        
+    }
+    
+    
 }
