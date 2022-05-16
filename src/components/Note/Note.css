@@ -1,16 +1,23 @@
 
-.note{
+.Note{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    background-color: #E8CD98;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;    
+    height: 100%;
+     
 }
 
 .produtos{
     width: 340px;
     height: 410px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.noteTitle{
+.notetitle{
     width: 430px;
     display: flex;
     justify-content: left;
@@ -18,11 +25,10 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 42px;
-    margin-bottom: -10px;
-    margin-left: 85px;
+    margin-left: 100px;
 }
 
-.noteDescription{
+.notedescription{
     display: flex;
     width: 430px;
     justify-content: left;
@@ -31,7 +37,7 @@
     font-weight: 700;
     line-height: 42px;
     text-align: left;
-    margin-left: 86px;
+    margin-left: 101px;
 }
 
 .button{
@@ -41,7 +47,7 @@
     box-shadow: 4px 4px 4px 0px #00000040;
     height: 65px;
     width: 257px;
-    margin-top: 25px;
+    margin-top: 30px;
     background-color: #6F4834;
     border-radius: 10px;
     border-style: hidden;
@@ -70,10 +76,38 @@
     }
 
 @media (max-width:420px){
-    .note{
+    .Note{
+        
         width: 100%;
-        margin-bottom: 30px;
-        margin-left: -25%;
+        margin-bottom: 80px;
+        margin-left: 0;
+        background-color: #E8CD98;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+     
     }
-
+    .notedescription{
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        font-family: Roboto Slab;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-right: 26%;
+    }
+    .notetitle{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        font-family: Roboto Slab;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-bottom: -10px;
+        margin-right: 27%;
+    }
+    
 }

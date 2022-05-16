@@ -101,7 +101,13 @@
     .drawer{
         background-color: #FFF7DE;
         width: 100%;
+       
     }
+
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+        background-color: #FFF7DE;
+    }
+
     .nomemenu{
         font-family: 'Roboto Slab', serif; 
         font-size: 1.5em;
