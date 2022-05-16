@@ -1,0 +1,79 @@
+
+.note{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.produtos{
+    width: 340px;
+    height: 410px;
+    margin-bottom: 10px;
+}
+
+.noteTitle{
+    width: 430px;
+    display: flex;
+    justify-content: left;
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: -10px;
+    margin-left: 85px;
+}
+
+.noteDescription{
+    display: flex;
+    width: 430px;
+    justify-content: left;
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    margin-left: 86px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 4px 0px #00000040;
+    height: 65px;
+    width: 257px;
+    margin-top: 25px;
+    background-color: #6F4834;
+    border-radius: 10px;
+    border-style: hidden;
+    }
+
+.button:hover{
+    background-color: #D7F80D;
+    }
+
+.selecionar{
+    display: flex;
+    color: #FFF7DE;
+    font-family: Roboto Slab;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    }
+
+    .nome{
+        color: #000;
+    }
+
+    .valor{
+        color: #6F4834;
+    }
+
+@media (max-width:420px){
+    .note{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: -25%;
+    }
+
+}
