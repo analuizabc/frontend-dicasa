@@ -1,11 +1,11 @@
-.container{
+.Container{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
     background-color: #FFF7DE;
     margin-top: 5%;
-    margin-bottom: 11%;
+    margin-bottom: 14%;
     box-shadow: 5px 5px 5px rgb(131, 127, 127);
 }
 
@@ -35,17 +35,20 @@
 }
 .texto2 {
     color: #6E4834;
-    margin-left: 30%; 
     height: 30px;
     font-size: 12px;
 }
 .noteTitle{
     margin-top: 3%;
     color: #6E4834; 
-    height: 70px;
+    height: 80px;
     font-size: 50px;
     font-family: 'Roboto Slab'; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
+
 .botao{
     background-color: #685246;
     color: #FFF7DE;
@@ -65,3 +68,75 @@
     background-color: transparent;
     border-color: transparent;
 }
+@media (max-width:420px){
+    .Container{
+        margin-top: 30%;
+        margin-bottom: 140%;
+    }
+    .noteTitle{
+        font-size: 30px ;
+        margin-top: 10%;
+    }
+    .texto{
+        font-size: 15px;
+    }
+    .base{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .texto2{
+        font-size: 10px;
+        margin-left:15%;
+    }
+
+}
+
+@media (min-width:750px){
+    .Container{
+        margin-bottom: 90%;
+        margin-top: 30%;
+    }
+    .base{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .noteTitle{
+        font-size: 40px;
+    }
+}
+@media(min-width: 1024px){
+    .Container{
+        margin-top:5%;
+        margin-bottom: 5%;
+
+    }
+    .base{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .noteTitle{
+        font-size: 40px;
+    }
+    .texto{
+        font-size:20px;
+    }
+}
+
+@media(min-width: 1200px){
+    .Container{
+        margin-top:10%;
+        margin-bottom: 22%;
+
+    }
+    .base{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .noteTitle{
+        font-size: 50px;
+    }
+    .texto{
+        font-size:20px;
+    }
+}
+

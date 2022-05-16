@@ -18,7 +18,7 @@ function Login() {
     return (
         <div className="fundo">
             <div className="base">
-                <div className="container">
+                <div className="Container">
                 <h1 className="noteTitle">Login</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
