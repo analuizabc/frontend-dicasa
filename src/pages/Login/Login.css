@@ -5,7 +5,8 @@
     align-items: center;
     background-color: #FFF7DE;
     margin-top: 5%;
-    margin-bottom: 12%;
+    margin-bottom: 11%;
+    box-shadow: 5px 5px 5px rgb(131, 127, 127);
 }
 
 .base{
@@ -19,8 +20,8 @@
 .inputs{
     display: flex;
     flex-direction: column;
-    margin-bottom: 40%; 
-    background-color: #6E4834;
+    margin-bottom: 5%; 
+    background-color: transparent;
 }
 .fundo{
     background-color: #E8CD98;
@@ -34,7 +35,7 @@
 }
 .texto2 {
     color: #6E4834;
-    margin-left: 30px; 
+    margin-left: 30%; 
     height: 30px;
     font-size: 12px;
 }
@@ -46,12 +47,21 @@
     font-family: 'Roboto Slab'; 
 }
 .botao{
-    background-color: #6E4834;
-    color:white;
+    background-color: #685246;
+    color: #FFF7DE;
+    font-family: 'Robot Slab';
+    font-weight: SemiBold;
+    width: 35%;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    top: 100%;
+    margin-bottom: 40%; 
+    margin-left:35%
 }
 .botaolink{
     color: #6E4834;
     background-color: transparent;
     border-color: transparent;
 }
-
