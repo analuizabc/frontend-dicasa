@@ -17,9 +17,9 @@ function Login() {
     }
     return (
         <div className="fundo">
-            <div className="base">
+            <div className="base_login">
                 <div className="Container">
-                <h1 className="noteTitle">Login</h1>
+                <h1 className="noteTitle_login">Login</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className="texto">E-mail:</Form.Label>
@@ -34,7 +34,7 @@ function Login() {
                         <button onClick={cadastro} className='botaolink'> aqui</button>
                         </h2>
                         <div className="inputs">
-                        <button onClick={login} className='botao'>Acessar</button>
+                        <button onClick={login} className='botao_login'>Acessar</button>
                         </div>
                 </Form>
                 </div>

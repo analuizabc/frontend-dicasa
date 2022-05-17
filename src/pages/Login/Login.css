@@ -9,7 +9,7 @@
     box-shadow: 5px 5px 5px rgb(131, 127, 127);
 }
 
-.base{
+.base_login{
     height: 100%;
     display: flex;
     align-items: center;
@@ -38,7 +38,7 @@
     height: 30px;
     font-size: 12px;
 }
-.noteTitle{
+.noteTitle_login{
     margin-top: 3%;
     color: #6E4834; 
     height: 80px;
@@ -49,7 +49,7 @@
     flex-direction: column;
 }
 
-.botao{
+.botao_login{
     background-color: #685246;
     color: #FFF7DE;
     font-family: 'Robot Slab';
@@ -73,14 +73,15 @@
         margin-top: 30%;
         margin-bottom: 140%;
     }
-    .noteTitle{
+    .noteTitle_login{
         font-size: 30px ;
         margin-top: 10%;
     }
     .texto{
         font-size: 15px;
     }
-    .base{
+    .base_login
+{
         margin-left: 8%;
         margin-right: 8%;
     }
@@ -96,11 +97,12 @@
         margin-bottom: 90%;
         margin-top: 30%;
     }
-    .base{
+    .base_login
+{
         margin-left: 10%;
         margin-right: 10%;
     }
-    .noteTitle{
+    .noteTitle_login{
         font-size: 40px;
     }
 }
@@ -110,11 +112,12 @@
         margin-bottom: 5%;
 
     }
-    .base{
+    .base_login
+{
         margin-left: 20%;
         margin-right: 20%;
     }
-    .noteTitle{
+    .noteTitle_login{
         font-size: 40px;
     }
     .texto{
@@ -128,11 +131,12 @@
         margin-bottom: 22%;
 
     }
-    .base{
+    .base_login
+{
         margin-left: 20%;
         margin-right: 20%;
     }
-    .noteTitle{
+    .noteTitle_login{
         font-size: 50px;
     }
     .texto{
