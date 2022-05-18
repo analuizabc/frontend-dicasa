@@ -1,98 +1,202 @@
+
 .container {
+    background-color: #E8CD98;
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+    background-image: url(./fundo.png);
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    background-position-y: center;
+    background-size: contain;
 }
-
-
 
 .caracol{
     width: 1349px;
-    margin-bottom: 60px;
 }
 
 .note{
     background-color: #E8CD98;
-   
+    display: flex;
+    align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+     min-height: 100vh;
+     
 }
 
-.noteTitle{
-    
-    margin-top: 50px;
+.notetitlE{
+    margin-top: 3%;
     color: #6F4834; 
-    
+    width: 85%;
+    display: flex;
 }
 
-.noteDescription{
-    margin-top: 10px ;
+.Notedescription{
+    width: 100%;
+    margin-top: 1.5% ;
 }
 
-.texto{
+.textO{
     font-family: 'Roboto Slab';
-    font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-
-    margin-left: 100px;
-    margin-right: 80px;
-    
-    
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-left: 10.5%;
+    margin-right: 8%;
 }
 
 .titulo{
+    display: flex;
     font-family: 'Roboto Slab';
-    font-style: normal;
     font-weight: 400;
-    font-size: 70px;
-    line-height: 92px; 
-    margin-left: -500px;
-    
+    font-size: 4.5em;
+    line-height: 1.3em; 
     
 }
 
 .baixo{
     display: flex;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    padding: 20px;
-
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3%;
+    padding: 1.6%;
+    justify-content: space-around;
 }
 
 .linhaStyle{
     height: 1px;
     width: 80%;
-    margin-left: 10%;
-    margin-top: 40px;
+    margin-top: 6%;
     background-color: #6F4834;
    
 }
 
 .saudavel {
-    margin-left: 160px;
+    
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 260%;
+    line-height: 130%;
 }
 
 .saboroso {
-    margin-left: 160px;
+    margin-right: 7%;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 53px;
-
+    font-size: 260%;
+    line-height: 130%;
+    margin-left: 7%;
     
 }
 
 .comida {
-    margin-left: 120px;
     font-family: 'Roboto Slab';
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 260%;
+    line-height: 130%;
+}
+
+@media (max-width: 934px){
+    .saudavel {
     
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8em;
+        line-height: 130%;
+    }
+    
+    .saboroso {
+        margin-right: 7%;
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8em;
+        line-height: 130%;
+        margin-left: 7%;
+        
+    }
+    
+    .comida {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.8em;
+        line-height: 130%;
+    }
+    .textO{
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.3em;
+        margin-left: 10.5%;
+        margin-right: 8%;
+    }
+    
+    .titulo{
+        display: flex;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 3em;
+        line-height: 1.3em; 
+        
+    }
+}
+
+
+@media (max-width:420px){
+
+    .textO{
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.3em;
+        margin-left: 10.5%;
+        margin-right: 8%;
+    }
+    
+    .titulo{
+        display: flex;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.3em; 
+        
+    }
+
+    .saudavel {
+    
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 130%;
+    }
+    
+    .saboroso {
+        margin-right: 7%;
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 130%;
+        margin-left: 7%;
+        
+    }
+    
+    .comida {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.8em;
+        line-height: 130%;
+    }
+
 }
