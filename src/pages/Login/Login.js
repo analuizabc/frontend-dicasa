@@ -7,10 +7,10 @@ import "./Login.css"
 function Login() {
     const history=useHistory();
     return (
-        <div className="base">
-            <div className="container">
-                <button onClick={()=>{history.push("/home");}}>Home</button>
-                <h1>Login</h1>
+        <div className="fundo">
+            <div className="base_login">
+                <div className="Container">
+                <h1 className="noteTitle_login">Login</h1>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email</Form.Label>
@@ -22,10 +22,12 @@ function Login() {
                         <Form.Label>Senha</Form.Label>
                         <Form.Control type="password" placeholder="" />
                     </Form.Group>
-                         Não tem login? Faça seu cadastro aqui
-                    <div className="inputs">
-                        <button>Acessar</button>
-                    </div>
+                        <h2 className="texto2">Não tem login? Faça seu cadastro
+                        <button onClick={cadastro} className='botaolink'> aqui</button>
+                        </h2>
+                        <div className="inputs">
+                        <button onClick={login} className='botao_login'>Acessar</button>
+                        </div>
                 </Form>
             </div>
         </div>

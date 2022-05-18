@@ -8,6 +8,7 @@ import Perfil from "./pages/Perfil";
 import Heather from "./pages/Heather";
 import Footer from "./pages/Footer";
 
+
 function Routes() {
     return(
         <BrowserRouter>
@@ -19,7 +20,6 @@ function Routes() {
               <Route path="/" component={UserHeather}/>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/cardapio" component={Cardapio}/>
-              
           </Switch>
         </BrowserRouter>
     )
@@ -31,6 +31,9 @@ function UserHeather() {
             <Switch>
                 <Route exact path="/cardapio" component={Cardapio}/>
                 <Route exact path="/home" component={Home}/>
+                <Route exact path="/login" component={Login}/>
+                <Route exact path="/cadastro" component={Cadastro}/>
+                <Route exact path="/perfil" component={Perfil}/>
             </Switch>
         </Heather>
     );
