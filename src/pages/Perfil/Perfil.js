@@ -16,6 +16,13 @@ function Perfil() {
             <Typography><h1 className="NoteTitle_perfil">Perfil</h1></Typography>
             <Typography><h1 className="texto_perfil">Detalhes da conta: </h1></Typography>
             <div className="Retangulo1">
+                <div>
+                    <div className="texto_formulario">Nome de Usuário: <div className="texto_editar">editar</div></div>
+                    <div className="campo_perfil"></div>
+                </div>
+                
+ 
+
 
             </div>
         </div>

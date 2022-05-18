@@ -25,6 +25,7 @@
 }
 .fundo{
     background-color: #E8CD98;
+    height: 100%;
 }
 .texto{
     color: #6E4834;
@@ -33,6 +34,7 @@
     font-size: 20px;
     font-family: 'Roboto Slab'; 
 }
+
 .texto2 {
     color: #6E4834;
     height: 30px;
