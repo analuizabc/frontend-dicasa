@@ -2,7 +2,7 @@ import { Input } from "@mui/material";
 import React from "react";
 import "./Cardapio.css"
 import Note from "../../components/Note";
-
+import { useState } from "react";
 
 
 const notes = [
@@ -82,6 +82,7 @@ const notes = [
 ]
 
 function Cardapio() {
+    const [botaoVisivel, setBotaoVisivel]=useState(true);
     return (
      <div className="cardapio">
         <img src="/images/Cardapio.png" alt="logocardapio" className="logocarda"></img>
@@ -89,9 +90,8 @@ function Cardapio() {
        
         <div className="noteContainer">
             {notes.map((note) => (
-            <Note key={note.id} note={note} />
+            <Note key={note.id} note={note} props={botaoVisivel} />
             ))}
-
         </div>
         <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
      </div>
