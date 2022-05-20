@@ -61,7 +61,6 @@
     margin-top: 3%;
     display: flex;
     justify-content: end;
-
 }
 .botao_sair{
     background-color: #685246;
@@ -98,4 +97,58 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+.noteContainer_perfil{
+    display: grid;
+    width: 100%;
+    padding: 100px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(340px,1fr)); 
+}
+/* .produto_perfil{
+    width: 15rem;
+    height: 12rem;
+} */
+
+
+@media(max-width:420px){
+    .NoteTitle_perfil{
+        font-size: 30px;
+    }
+    .texto_perfil{
+        font-size: 15px;
+        height:25px
+    }
+    .campo_perfil{
+        height:30px
+    }
+    .texto_formulario{
+        font-size: 10px;
+        height:5px;
+    }
+    .botaoeditar{
+        font-size: 9px;
+        height: 5px;
+    }
+    .botao_sair{
+        width:30%;
+        margin-left: 35%;
+        margin-right: 35%;
+        font-size: 12px;
+        
+    }
+    .noteContainer_perfil{
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px;
+    }
+
+}
+@media(min-width:600px){
+    .botao_sair{
+        width:18%;
+        margin-left: 41%;
+        margin-right: 41%;
+    }
 }
