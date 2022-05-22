@@ -83,13 +83,7 @@
     }
 }
 
-@media (max-width:751px){
-    .h1{
-        font-size: 1em;
-    }
-}
-    
-@media screen and (max-width:420px){
+@media screen and (max-width: 420px){
     .appbar{
         display: none;
     }
@@ -116,9 +110,58 @@
         height: 14px;
         margin-left: 20px;
     } 
+
 }
 
-@media screen and (min-width:420px){
+
+
+/* @media (max-width:800px){
+    .h1{
+        font-size: 1em;
+    }
+    .h1,h1{
+        font-size: calc(1.375rem + 0.2vw);
+    }
+} */
+    
+@media (min-width: 421px) and (max-width:800px){
+    .appbar{
+        display: none;
+    }
+    .img2{ 
+        margin-left: 10px;
+        height: 40px;
+        width: 41px;
+    }
+    .drawer{
+        background-color: #FFF7DE;
+        width: 100%;
+       
+    }
+    .toolBar{
+        background-color: #FFF7DE;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+        background-color: #FFF7DE;
+    }
+
+    .nomemenu{
+        font-family: 'Roboto Slab', serif; 
+        font-size: 1.5em;
+        font-weight: 500;
+        color: #6F4834;
+        height: 14px;
+        margin-left: 20px;
+    } 
+}
+
+@media screen and (min-width:800px){
    .menu{
         display: none;
         
