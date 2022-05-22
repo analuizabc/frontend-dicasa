@@ -4,7 +4,7 @@ import "./Perfil.css"
 import { Typography, Input} from "@mui/material";
 import { Form, Button} from "react-bootstrap";
 import Note from "../../components/Note";
-import { useHistory } from "react-router-dom";
+import { WindowSharp } from "@mui/icons-material";
 
 const notes = [
     {
@@ -91,12 +91,6 @@ function Perfil() {
     const [EndereçodeEmail, setEndereçodeEmail]=useState();
     const [Endereço, setEndereço]=useState();
     const [botaoVisivel, setBotaoVisivel]=useState(false);
-
-    const history=useHistory();
-
-    function sair(){
-        history.push("home");
-    }
    
     
     return (
@@ -146,7 +140,7 @@ function Perfil() {
                         </div>
                      </div>
                      <div className="line">
-                        <button onClick={sair} className='botao_sair'>Sair da Conta</button>
+                        <button onClick={() => {window.location.href="/home"}} className='botao_sair'>Sair da Conta</button>
                      </div>
                 </div>
             </div>
