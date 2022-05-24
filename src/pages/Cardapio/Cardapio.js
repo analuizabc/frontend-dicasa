@@ -1,6 +1,7 @@
 import { Input } from "@mui/material";
-import React from "react";
-import "./Cardapio.css"
+import React, { useEffect, useState } from "react";
+import api from "../../services/api";
+import "./Cardapio.css";
 import Note from "../../components/Note";
 
 
@@ -82,18 +83,44 @@ const notes = [
 ]
 
 function Cardapio() {
+
+    const [produtos, setProdutos] = useState([])
+
+
+    function test() {
+        console.log(produtos)
+    }
+
+    async function getProdutos() {
+        try {
+            const response = await api.get(`/produtosget`);
+            setProdutos(response.data);
+            console.log(response.data);
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
+        }
+    }
+
+    useEffect( ()=>{
+        getProdutos();
+    },[])
+
+    
+
     return (
      <div className="cardapio">
         <img src="/images/Cardapio.png" alt="logocardapio" className="logocarda"></img>
         <Input type="text"  className="barra"></Input>
        
         <div className="noteContainer">
-            {notes.map((note) => (
-            <Note key={note.id} note={note} />
+            {produtos.map((produto) => (
+            <Note key={produto.produto_id} produto={produto} />
             ))}
 
         </div>
         <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
+        <button onClick={()=>test()}><h4>test</h4></button>
      </div>
 
     );

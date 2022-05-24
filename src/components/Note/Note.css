@@ -18,14 +18,14 @@
 }
 
 .notetitle{
-    width: 430px;
+    width: 452px;
     display: flex;
     justify-content: left;
     font-family: Roboto Slab;
     font-size: 32px;
     font-weight: 700;
     line-height: 42px;
-    margin-left: 100px;
+    margin-left: 102px;
 }
 
 .notedescription{
@@ -37,7 +37,7 @@
     font-weight: 700;
     line-height: 42px;
     text-align: left;
-    margin-left: 101px;
+    margin-left: 85px;
 }
 
 .button{
