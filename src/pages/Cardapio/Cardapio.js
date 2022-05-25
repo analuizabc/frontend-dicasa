@@ -53,7 +53,7 @@ const notes = [
     {
         id: 8,
         src:"/images/Rectangle68.png",
-        title: "Saalada Tropical",
+        title: "Salada Tropical",
         description: "R$ 12,00",
     },
     {
@@ -95,7 +95,6 @@ function Cardapio() {
         try {
             const response = await api.get(`/produtosget`);
             setProdutos(response.data);
-            console.log(response.data);
         } catch (error) {
             console.warn(error);
             alert(error.message);
