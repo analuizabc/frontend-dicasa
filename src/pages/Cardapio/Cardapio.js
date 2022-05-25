@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import "./Cardapio.css";
 import Note from "../../components/Note";
-
+import { useState } from "react";
 
 
 const notes = [
@@ -116,7 +116,6 @@ function Cardapio() {
             {produtos.map((produto) => (
             <Note key={produto.produto_id} produto={produto} />
             ))}
-
         </div>
         <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
         <button onClick={()=>test()}><h4>test</h4></button>
