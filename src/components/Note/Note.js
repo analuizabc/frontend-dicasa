@@ -32,6 +32,34 @@ function Note({ produto, props }) {
         )
     }
 
+   
+    async function postProdutoUser() {
+        const produto_id = produto.produto_id
+        try {
+            const response = await api.post(`/produtouser`,{
+                user_id,
+                produto_id
+            });
+            window.location.href="/cardapio"
+            return response;
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
+        }
+    }
+
+    async function deleteProdutoUser() {
+        const produto_id = produto.produto_id
+        try {
+            const response = await api.delete(`/produtouser/${produto_id}/${user_id}`);
+            window.location.href="/cardapio"
+            return response;
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
+        }
+    }
+
     useEffect( ()=>{
         getProdutosUsuario();
     },[])
@@ -47,9 +75,9 @@ function Note({ produto, props }) {
         {props ? ( 
             <>
             {produtoSelecionado ? (
-            <button className="buttonselecionado" id=""><h4 className="selecionar">Selecionado</h4></button>
+            <button className="buttonselecionado" onClick={() => {deleteProdutoUser()}} id=""><h4 className="selecionar">Selecionado</h4></button>
         ) : (
-            <button className="button" id=""><h4 className="selecionar">Selecionar</h4></button>
+            <button className="button" onClick={() => {postProdutoUser()}} id=""><h4 className="selecionar">Selecionar</h4></button>
         )
         }</>
         ) : ( 

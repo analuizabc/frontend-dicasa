@@ -42,7 +42,7 @@ function Cardapio() {
             ))}
         </div>
         <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
-        <button onClick={()=>test()}><h4>test</h4></button>
+        <button style={{color:"green"}} onClick={()=>test()}><h4>MARIA</h4></button>
      </div>
 
     );
