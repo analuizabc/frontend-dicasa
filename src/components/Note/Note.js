@@ -75,7 +75,7 @@ function Note({ produto, props }) {
         {props ? ( 
             <>
             {produtoSelecionado ? (
-            <button className="buttonselecionado" onClick={() => {deleteProdutoUser()}} id=""><h4 className="selecionar">Selecionado</h4></button>
+            <button className="buttonselecionado" onClick={() => {deleteProdutoUser()}} id=""><h4 className="selecionar">Desselecionar</h4></button>
         ) : (
             <button className="button" onClick={() => {postProdutoUser()}} id=""><h4 className="selecionar">Selecionar</h4></button>
         )

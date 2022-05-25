@@ -8,8 +8,8 @@ import Note from "../../components/Note";
 function Cardapio() {
 
     const [botaoVisivel, setBotaoVisivel]=useState(true);
-    const [produtos, setProdutos] = useState([])
-
+    const [produtos, setProdutos] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
 
     function test() {
         console.log(produtos)
@@ -34,15 +34,19 @@ function Cardapio() {
     return (
      <div className="cardapio">
         <img src="/images/Cardapio.png" alt="logocardapio" className="logocarda"></img>
-        <Input type="text"  className="barra"></Input>
+        <Input type="text" onChange={(event) => { setSearchTerm(event.target.value); }} className="barra"></Input>
        
         <div className="noteContainer">
-            {produtos.map((produto) => (
+            {produtos.filter((val)=> {
+                if (searchTerm == "") {
+                    return val
+                } else if (val.titulo.toLowerCase().includes(searchTerm.toLowerCase())) {
+                    return val
+                }}).map((produto) => (
             <Note key={produto.produto_id} produto={produto} props={botaoVisivel} />
             ))}
         </div>
         <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
-        <button style={{color:"green"}} onClick={()=>test()}><h4>MARIA</h4></button>
      </div>
 
     );
