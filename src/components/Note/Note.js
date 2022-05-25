@@ -4,7 +4,7 @@ import api from "../../services/api";
 import "./Note.css";
 
 
-function Note({ produto }) {
+function Note({ produto, props }) {
 
     const [produtosUsuario, setProdutosUsuario] = useState([])
     const [produtoSelecionado, setProdutoSelecionado] = useState(false)
@@ -44,12 +44,19 @@ function Note({ produto }) {
         <img src={produto.imagem} alt="carda" className="produtos"></img>
         <div className="notetitle"><text className="nome">{produto.titulo}</text></div>
         <div className="notedescription"><text className="valor">{produto.valor}</text></div>
-        {produtoSelecionado ? (
+        {props ? ( 
+            <>
+            {produtoSelecionado ? (
             <button className="buttonselecionado" id=""><h4 className="selecionar">Selecionado</h4></button>
         ) : (
             <button className="button" id=""><h4 className="selecionar">Selecionar</h4></button>
         )
-        }
+        }</>
+        ) : ( 
+            <></> 
+        ) 
+    } 
+        
     </div>
     );
 }

@@ -145,13 +145,13 @@ function Perfil() {
                 </div>
             </div>
             <Typography><h1 className="texto_perfil">Itens selecionados: </h1></Typography>
-                <div className="noteContainer_perfil">
+                {/* <div className="noteContainer_perfil">
                     {notes.map((note) => (
                         <div className="produto_perfil">
                             <Note key={note.id} note={note} props={botaoVisivel} />
                         </div>
                     ))}
-                </div>
+                </div> */}
 
             <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
             
