@@ -1,0 +1,139 @@
+.paginaFooter
+{
+  background-color:#9AE200;
+  /* padding:80px 0 20px; */
+  font-size:15px;
+  /* line-height:24px; */
+  color:#6E4834;
+  margin-top: 12px;
+  /* height: 20%; */
+  box-shadow: 5px 5px 5px rgb(131, 127, 127);
+  position:static;
+} 
+  
+
+/* .paginaFooter
+{
+
+  border-top-color:greenyellow;
+  font-size:100px;
+  letter-spacing:3px;
+  font-weight: Bold;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  margin-right: 8spx;
+  height: 2.4em;
+  
+} */
+
+
+
+/* .containerFooter
+{
+    background-color:#9AE200;
+    height: 80%;
+    box-shadow: 5px 5px 5px rgb(131, 127, 127);
+    position:static;
+
+} */
+
+
+.listItemText
+{
+    display:flex;
+    margin-top: 2%;
+   
+
+}
+.text1
+{
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    letter-spacing: 0.00938em;
+    margin-top: 31%;
+    
+ 
+ 
+}
+
+.text2
+{
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    margin-top: 0px;
+    letter-spacing: 0.00938em;
+    margin-top: 14.2%;
+   
+}
+
+.text3
+{
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    letter-spacing: 0.00938em;
+    margin-top: 8%;
+}
+
+.listItemText
+{
+    font-size: 35px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    letter-spacing: 0.00938em;
+}
+
+/* .iconFooter
+{
+    height: 2.4em;
+    vertical-align: middle;
+    object-fit: fill;
+    margin-bottom: 0.3%;
+    margin-right: 5%;
+    margin-left: 8.5%;
+    height: 90%;
+    width: 17%;
+} */
+ 
+
+.imgLocal
+{
+    height: 45px;
+}  
+
+.icons1
+{
+    display: grid;
+    flex-direction: column;
+    grid-row-gap: 20px;
+    margin-left: 2%;
+    margin-top: -6%;
+}
+
+.icons
+{
+display: grid;
+flex-direction: column;
+width: 2.5%;
+grid-row-gap: 22px;
+margin-left: 70%;
+margin-top: -7.7%;
+}
+
+.imgLinha{
+    margin-top: -8.5%;
+    margin-left: 65%;
+    margin-bottom: 4%;
+
+}
+
+.containerFooter{
+    margin-left:17%;
+}
+
+.imgFacebook{
+    margin-top: 11%;
+}
