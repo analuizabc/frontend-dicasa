@@ -21,6 +21,10 @@
     grid-template-columns: repeat(auto-fill, minmax(340px,1fr)); 
 }
 
+.css-1tcs2i1-MuiInputBase-root-MuiInput-root {
+    font-size: 25px !important ;
+}
+
 .barra{
     display: flex;
     background-color: white;
@@ -49,6 +53,10 @@
     .barra{
         height: 35px;
     }
+}
+
+.css-1tcs2i1-MuiInputBase-root-MuiInput-root {
+    font-size: 20px !important ;
 }
         
 
@@ -79,4 +87,7 @@
         padding: 0px;
     }
 
+    .css-1tcs2i1-MuiInputBase-root-MuiInput-root {
+        font-size: 15px !important ;
+    }
 }

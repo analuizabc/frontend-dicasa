@@ -7,13 +7,10 @@ import Note from "../../components/Note";
 
 function Cardapio() {
 
-    const [botaoVisivel, setBotaoVisivel]=useState(true);
+    const [botaoVisivel]=useState(true);
     const [produtos, setProdutos] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
 
-    function test() {
-        console.log(produtos)
-    }
 
     async function getProdutos() {
         try {
@@ -38,7 +35,7 @@ function Cardapio() {
        
         <div className="noteContainer">
             {produtos.filter((val)=> {
-                if (searchTerm == "") {
+                if (searchTerm === "") {
                     return val
                 } else if (val.titulo.toLowerCase().includes(searchTerm.toLowerCase())) {
                     return val
