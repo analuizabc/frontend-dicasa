@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import api from"../../services/api"
+import{login} from "../../services/auth"
 import "./Login.css"
 
 
@@ -10,11 +11,12 @@ function Login() {
     const [email, setEmail]=useState();
     const [password, setPassword]=useState();
 
-    async function login(e){
+    async function handleLogin(e){
         e.preventDefault();
         try {
           const response= await api.post('/login',{email,password} );
           alert("Bem vindo");
+          login(response.data.accessToken)
           window.location.href="\home";
         }catch(error){
         if(error.response.status===403){
@@ -48,7 +50,7 @@ function Login() {
                         <button onClick={cadastro} className='botaolink'> aqui</button>
                         </h2>
                         <div className="inputs">
-                        <button onClick={login} className='botao_login'>Acessar</button>
+                        <button onClick={handleLogin} className='botao_login'>Acessar</button>
                         </div>
                 </Form>
                 </div>
