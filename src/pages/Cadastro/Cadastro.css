@@ -17,7 +17,7 @@
     box-shadow: 5px 5px 5px rgb(131, 127, 127)
 }
 
-.base{
+.baseCadastro{
     height: 100%;
     width: 100%;
     background-color:#E8CD98 ;
@@ -74,7 +74,7 @@
 
 }
 
-.botao{
+.botaoCadastro{
     background-color: #685246;
     color: #FFF7DE;
     font-family: 'Robot Slab';
@@ -101,10 +101,7 @@
 
 @media (max-width:420px){
     .containerCadastro{
-        margin-top: 136%;
-        margin-bottom: 140%;
-        margin-left: 65%;
-       
+       min-width: 90%;
     }
     .nomeTitulo{
         font-size: 30px;
@@ -113,12 +110,27 @@
     .campoLabel{
         font-size: 15px;
     }
-    .base{
+    .baseCadastro{
         margin-left: 0px;
         margin-right: 50px;
         width: 100%;
-        
- 
     }
+    
+    .botaoCadastro{
+        width: 35%;
+
+    }
+
+}
+
+@media (min-width: 421px) and (max-width: 830px){
+    .containerCadastro{
+        min-width: 90%;
+     }
+
+     .campoLabel{
+        font-size: 18px;
+    }
+ 
 
 }

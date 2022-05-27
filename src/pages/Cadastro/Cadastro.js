@@ -39,7 +39,7 @@ function Cadastro() {
     }
 
     return ( 
-        <div className="base">
+        <div className="baseCadastro">
             <div className="containerCadastro">
                 <div>
                     <h1 className="nomeTitulo">Cadastre-se</h1>
@@ -103,7 +103,7 @@ function Cadastro() {
 
 
                         <div>
-                            <button onClick={cadastro} className="botao">Cadastre-se</button>  
+                            <button onClick={cadastro} className="botaoCadastro">Cadastre-se</button>  
                         </div>
 
                     </Form>
