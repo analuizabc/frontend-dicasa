@@ -17,8 +17,16 @@
     width: 100%;
     padding: 100px;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 80px;
     grid-template-columns: repeat(auto-fill, minmax(340px,1fr)); 
+}
+
+.css-1tcs2i1-MuiInputBase-root-MuiInput-root {
+    font-size: 25px !important ;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    padding-left: 20px !important;
 }
 
 .barra{
@@ -50,6 +58,10 @@
         height: 35px;
     }
 }
+
+.css-1tcs2i1-MuiInputBase-root-MuiInput-root {
+    font-size: 20px !important ;
+}
         
 
 @media (max-width:420px){
@@ -79,4 +91,7 @@
         padding: 0px;
     }
 
+    .css-1tcs2i1-MuiInputBase-root-MuiInput-root {
+        font-size: 15px !important ;
+    }
 }
