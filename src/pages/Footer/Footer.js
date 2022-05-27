@@ -19,9 +19,9 @@ return(
                               
                                 <img src="/images/Whatsapp.png" className="imgWhatsapp"/>
 
-                                     <div className="caixaTexto">
+                                   
                                    <h1 className="text1">Telefone: 31 9 9593-1173</h1>
-                                   </div>
+                                  
                              
                             </div>
                         
