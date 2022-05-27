@@ -38,6 +38,7 @@ function Perfil() {
 
 
     function handleChange(e) {
+        console.log(e);
         const {name, value} = e.target;
         return setDadosUsuario({...dadosUsuario,[name]:value})
     }
@@ -45,8 +46,9 @@ function Perfil() {
 
 
     async function putDadosUsuario(name, value) {
+        console.log(name, value)
         try {
-            const response = await api.put(`/users/${user_id}`,{name:value});
+            const response = await api.put(`/users/${user_id}`,{[name]:value});
             setDadosUsuario(response.data);
         } catch (error) {
             console.warn(error);
@@ -95,16 +97,15 @@ function Perfil() {
                         <div className="column">
                             <div className="linha">
                                 <h1 className="texto_formulario">Endereço de email: </h1>
-                                <button className='botaoeditar'>Editar</button>
                             </div>
                             <div className="linha">
-                                <Input className="campo_perfil" type="text" placeholder="" name="email" value={dadosUsuario.email} onChange={handleChange}/>
+                                <Input className="campo_perfil" type="text" placeholder="" name="email" value={dadosUsuario.email} />
                             </div>
                         </div>
                         <div className="column">
                             <div className="linha">
                                 <h1 className="texto_formulario">Endereço: </h1>
-                                <button className='botaoeditar' onClick={() => {putDadosUsuario("name",dadosUsuario.endereço)}}>Editar</button>
+                                <button className='botaoeditar' onClick={() => {putDadosUsuario("endereço",dadosUsuario.endereço)}}>Editar</button>
                             </div>
                             <div className="linha">
                                 <Input className="campo_perfil" type="text" placeholder="" name="endereço" value={dadosUsuario.endereço} onChange={handleChange}/>

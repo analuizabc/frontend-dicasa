@@ -25,6 +25,10 @@
     font-size: 25px !important ;
 }
 
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+    padding-left: 20px !important;
+}
+
 .barra{
     display: flex;
     background-color: white;
