@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import api from"../../services/api"
 import "./Cadastro.css"
 
 function Cadastro() {
@@ -13,11 +14,30 @@ function Cadastro() {
 
     const history=useHistory();
 
-    function cadastro(){
-        history.push("Login");
-        alert("Cadastro realizado com sucesso.");
-        
+    async function cadastro(e){
+        e.preventDefault();
+          if(password===confirmarsenha){
+            try {
+                const response= await api.post('/users',{name: nomedeusuario, email, password, cidade, endereço } );
+                alert("Cadastro realizado com sucesso");
+                window.location.href="\login";
+              }catch(error){
+              if(error.response.status===403){
+                  alert("Dados inválidos");
+              }
+              else{
+                  alert(error.response.data.notification);
+              }
+              console.warn(error)
+              }
+          }
+          else{
+              alert("Senha de confirmaçao incorreta");
+          }
+
+
     }
+
     return ( 
         <div className="baseCadastro">
             <div className="containerCadastro">

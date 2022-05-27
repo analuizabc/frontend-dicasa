@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import api from "../../services/api";
+import {getUserId} from "../../services/auth";
 import "./Note.css";
 
 
@@ -9,7 +10,8 @@ function Note({ produto, props }) {
     const [produtosUsuario, setProdutosUsuario] = useState([])
     const [produtoSelecionado, setProdutoSelecionado] = useState(false)
     const [produtoOficial, setProdutoOficial] = useState({})
-
+    const user_id = getUserId()
+    console.log(user_id)
 
     async function getProdutoPerfil(){
         if (!props) {
@@ -28,14 +30,14 @@ function Note({ produto, props }) {
     }
 
 
-    const user_id = "b5e44af6-d9af-4391-9dfd-8c49fc3bc0a0"
+    
     async function getProdutosUsuario() {
         try {
             const response = await api.get(`/produtouser/${user_id}`);
             setProdutosUsuario(response.data);
         } catch (error) {
             console.warn(error);
-            alert(error.message);
+            
         }
     }
 

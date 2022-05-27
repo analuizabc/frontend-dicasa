@@ -4,17 +4,20 @@ import "./Perfil.css"
 import { Typography, Input} from "@mui/material";
 import Note from "../../components/Note";
 import api from "../../services/api";
-
+import {getUserId, logout} from "../../services/auth";
 
 function Perfil() {
     
     const [botaoVisivel]=useState(false);
     const [produtosUsuario, setProdutosUsuario] = useState([])
     const [dadosUsuario, setDadosUsuario] = useState({});
-    
+    const user_id = getUserId()
    
+    function logoutUser() {
+        logout()
+        window.location.href="/home";
+    }
 
-    const user_id = "b5e44af6-d9af-4391-9dfd-8c49fc3bc0a0"
     async function getProdutosUsuario() {
         try {
             const response = await api.get(`/produtouser/${user_id}`);
@@ -50,6 +53,7 @@ function Perfil() {
         try {
             const response = await api.put(`/users/${user_id}`,{[name]:value});
             setDadosUsuario(response.data);
+            alert("Usuário alterado com sucesso")
         } catch (error) {
             console.warn(error);
             alert(error.message);
@@ -113,7 +117,7 @@ function Perfil() {
                         </div>
                      </div>
                      <div className="line">
-                        <button onClick={() => {window.location.href="/home"}} className='botao_sair'>Sair da Conta</button>
+                        <button onClick={logoutUser} className='botao_sair'>Sair da Conta</button>
                      </div>
                 </div>
             </div>
