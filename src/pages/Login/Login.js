@@ -16,7 +16,7 @@ function Login() {
         try {
           const response= await api.post('/login',{email,password} );
           alert("Bem vindo");
-          login(response.data.accessToken)
+          login(response.data.accessToken, response.data.user.user_id)
           window.location.href="\home";
         }catch(error){
         if(error.response.status===403){
