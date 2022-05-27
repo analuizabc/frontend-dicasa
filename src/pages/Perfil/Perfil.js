@@ -130,7 +130,7 @@ function Perfil() {
                     ))}
                 </div> 
 
-            <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
+            <img src="/images/logo2.png" alt="logofinalperfil" className="logofinal"></img>
             
             
         </div>

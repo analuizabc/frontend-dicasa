@@ -47,7 +47,7 @@ function Login() {
                     <Form.Control type="password" placeholder="" onChange={(e)=>setPassword(e.target.value)} />
                     </Form.Group>
                         <h2 className="texto2">Não tem login? Faça seu cadastro
-                        <button onClick={cadastro} className='botaolink'> aqui</button>
+                        <button onClick={cadastro} className='botaolink'> a͟q͟u͟i͟.</button>
                         </h2>
                         <div className="inputs">
                         <button onClick={handleLogin} className='botao_login'>Acessar</button>
