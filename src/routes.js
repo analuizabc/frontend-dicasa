@@ -31,8 +31,8 @@ function Routes() {
     return(
         <BrowserRouter>
           <Switch>
-              <Route path="/login" component={Login}/>
               <Route path="/" component={UserHeather}/>
+              <Route path="/login" component={Login}/>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/cardapio" component={Cardapio}/>
               <Route exact path="/cadastro" component={Cadastro}/>
