@@ -6,7 +6,10 @@ import "./Footer.css";
 
 function Footer(props) {
 return( 
-    
+
+    <>
+    {props.children}
+   
         <div className="paginaFooter">
             
                     <div className="containerFooter" >  
@@ -72,7 +75,7 @@ return(
         
    
  
-   
+        </>
       
 );
 }
