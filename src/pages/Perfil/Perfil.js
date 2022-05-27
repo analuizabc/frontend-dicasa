@@ -1,96 +1,70 @@
-import { ClassNames } from "@emotion/react";
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
 import "./Perfil.css"
 import { Typography, Input} from "@mui/material";
-import { Form, Button} from "react-bootstrap";
 import Note from "../../components/Note";
-import { WindowSharp } from "@mui/icons-material";
-
-const notes = [
-    {
-        id: 1,
-        src:"/images/Rectangle61.png",
-        title: "Combo Sanduíche + Suco",
-        description: "R$ 20,00",
-        
-    },
-    {
-        id: 2,
-        src:"/images/Rectangle30.png",
-        title: "Tapioca",
-        description: "R$ 10,00",
-    },
-    {
-        id: 3,
-        src:"/images/Rectangle63.png",
-        title: "Crepioca",
-        description: "R$ 12,00",
-    },
-    {
-        id: 4,
-        src:"/images/Rectangle64.png",
-        title: "Pastel Assado",
-        description: "R$ 9,00",
-    },
-    {
-        id: 5,
-        src:"/images/Rectangle65.png",
-        title: "Sanduíche Natural",
-        description: "R$ 15,00",
-    },
-    {
-        id: 6,
-        src:"/images/Rectangle66.png",
-        title: "Salada de Frutas",
-        description: "R$ 10,00",
-    },
-    {
-        id: 7,
-        src:"/images/Rectangle67.png",
-        title: "Salada Caesar",
-        description: "R$ 15,00",
-    },
-    {
-        id: 8,
-        src:"/images/Rectangle68.png",
-        title: "Saalada Tropical",
-        description: "R$ 12,00",
-    },
-    {
-        id: 9,
-        src:"/images/Rectangle69.png",
-        title: "Omelete",
-        description: "R$ 13,50",
-    },
-    {
-        id: 10,
-        src:"/images/Rectangle70.png",
-        title: "Suco Verde",
-        description: "R$ 8,00",
-    },
-    {
-        id: 11,
-        src:"/images/Rectangle71.png",
-        title: "Suco Natural",
-        description: "R$ 6,00",
-    },
-    {
-        id: 12,
-        src:"/images/Rectangle72.png",
-        title: "Vitamina",
-        description: "R$ 9,00",
-    },
-]
-
-
+import api from "../../services/api";
 
 
 function Perfil() {
-    const [NomedeUsuario, setNomeDeUsuario]=useState();
-    const [Cidade, setCidade]=useState();
-    const [EndereçodeEmail, setEndereçodeEmail]=useState();
-    const [Endereço, setEndereço]=useState();
-    const [botaoVisivel, setBotaoVisivel]=useState(false);
+    
+    const [botaoVisivel]=useState(false);
+    const [produtosUsuario, setProdutosUsuario] = useState([])
+    const [dadosUsuario, setDadosUsuario] = useState({});
+    
+   
+
+    const user_id = "b5e44af6-d9af-4391-9dfd-8c49fc3bc0a0"
+    async function getProdutosUsuario() {
+        try {
+            const response = await api.get(`/produtouser/${user_id}`);
+            setProdutosUsuario(response.data);
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
+        }
+    }
+
+    async function getDadosUsuario() {
+        try {
+            const response = await api.get(`/users/${user_id}`);
+            console.log(response);
+            setDadosUsuario(response.data);
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
+        }
+    }
+
+
+    function handleChange(e) {
+        console.log(e);
+        const {name, value} = e.target;
+        return setDadosUsuario({...dadosUsuario,[name]:value})
+    }
+
+
+
+    async function putDadosUsuario(name, value) {
+        console.log(name, value)
+        try {
+            const response = await api.put(`/users/${user_id}`,{[name]:value});
+            setDadosUsuario(response.data);
+        } catch (error) {
+            console.warn(error);
+            alert(error.message);
+        }
+    }
+
+
+
+    useEffect( ()=>{
+        getProdutosUsuario();
+        getDadosUsuario();
+    },[])
+
+    
+
    
     
     return (
@@ -103,19 +77,19 @@ function Perfil() {
                          <div className="column">
                             <div className="linha">
                                 <h1 className="texto_formulario">Nome de Usuário: </h1>
-                                <button className='botaoeditar'>Editar</button>
+                                <button className='botaoeditar' onClick={() => {putDadosUsuario("name",dadosUsuario.name)}} >Editar</button>
                             </div>
                             <div className="linha">
-                                <Input className="campo_perfil" type="text" placeholder=""></Input>
+                                <Input className="campo_perfil" type="text" placeholder="" name="name" value={dadosUsuario.name} onChange={handleChange} />
                             </div>
                          </div>
                          <div className="column">
                             <div className="linha">
                                 <h1 className="texto_formulario">Cidade: </h1>
-                                <button className='botaoeditar'>Editar</button>
+                                <button className='botaoeditar' onClick={() => {putDadosUsuario("cidade",dadosUsuario.cidade)}} >Editar</button>
                             </div>
                             <div className="linha">
-                                <Input className="campo_perfil" type="text" placeholder=""></Input>
+                                <Input className="campo_perfil" type="text" placeholder="" name="cidade" value={dadosUsuario.cidade} onChange={handleChange}/>
                             </div>
                          </div>
                      </div>
@@ -123,19 +97,18 @@ function Perfil() {
                         <div className="column">
                             <div className="linha">
                                 <h1 className="texto_formulario">Endereço de email: </h1>
-                                <button className='botaoeditar'>Editar</button>
                             </div>
                             <div className="linha">
-                                <Input className="campo_perfil" type="text" placeholder=""></Input>
+                                <Input className="campo_perfil" type="text" placeholder="" name="email" value={dadosUsuario.email} />
                             </div>
                         </div>
                         <div className="column">
                             <div className="linha">
                                 <h1 className="texto_formulario">Endereço: </h1>
-                                <button className='botaoeditar'>Editar</button>
+                                <button className='botaoeditar' onClick={() => {putDadosUsuario("endereço",dadosUsuario.endereço)}}>Editar</button>
                             </div>
                             <div className="linha">
-                                <Input className="campo_perfil" type="text" placeholder=""></Input>
+                                <Input className="campo_perfil" type="text" placeholder="" name="endereço" value={dadosUsuario.endereço} onChange={handleChange}/>
                             </div>
                         </div>
                      </div>
@@ -145,13 +118,13 @@ function Perfil() {
                 </div>
             </div>
             <Typography><h1 className="texto_perfil">Itens selecionados: </h1></Typography>
-                {/* <div className="noteContainer_perfil">
-                    {notes.map((note) => (
+                 <div className="noteContainer_perfil">
+                    {produtosUsuario.map((produto) => (
                         <div className="produto_perfil">
-                            <Note key={note.id} note={note} props={botaoVisivel} />
+                            <Note key={produto.produto_id} produto={produto} props={botaoVisivel} />
                         </div>
                     ))}
-                </div> */}
+                </div> 
 
             <img src="/images/logo2.png" alt="logofinal" className="logofinal"></img>
             
