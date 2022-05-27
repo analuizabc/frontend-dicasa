@@ -9,10 +9,10 @@
   /* font-size:15px; */
   /* line-height:26px; */
   color:#6E4834;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   /* height: 20%; */
   /* box-shadow: 5px 5px 5px rgb(131, 127, 127); */
-  position:static;
+  /* position:static; */
   /* max-width: 100%;
   max-height: 30%; */
   height:  270px;
@@ -27,7 +27,7 @@
         display: flex;
         justify-content: row;
         align-items: center;
-        margin-top: 34%;
+        /* margin-top: 34%; */
  }
 
 
@@ -62,7 +62,7 @@
     height: 80%;
     
 }
-.listItemText
+/* .listItemText
 {
         font-size: 30px;
         font-family: 'Roboto Slab';
@@ -73,7 +73,7 @@
     
     
 
-}    
+}     */
 
 
 .text1
@@ -124,8 +124,75 @@
     .imgInstagram{
         margin-top: 3%;
     }
-    
- @media (max-width: 450px) {
+    @media (max-width: 1100px) {
+        .containerDireita{
+        width: 30%;
+        height: 80%;
+        }
+        
+        .containerEsquerda{
+            /* width:60%;
+            height: 50%; */
+            width: 70%;
+            height: 10%;
+            padding-left: 3% ;
+        }
+        .paginaFooter{
+            height: 300px;
+        }
+        .containerFooter{
+           
+        }
+        
+        .text1{
+       
+        word-break: 20%;
+        font-size: 1.9rem;
+        }
+        
+        .iconeTexto1{
+            width: 100%;
+        
+        }
+        
+        .caixaTexto{
+            width: 100%;
+        }
+        
+        .imgFacebook{
+            width: 2.5em;
+            height: 2.5em;
+            margin-top: 14%;
+        }
+        .imgInstagram{
+            width: 3em;
+            height: 3em;
+            margin-top: 4%;
+        }
+        .imgTwitter{
+            width: 3em;
+            height: 3em;
+            margin-top: 5%;
+            
+        }
+        .imgWhatsapp{
+            width: 2em;
+            height: 2em;
+        
+        }
+        .imgLocal{
+            width: 3em;
+            height: 2em;
+        }
+        
+        .imgEmail{
+            width: 2em;
+            height: 1.7em;
+        }
+        
+         }
+         
+ @media (max-width: 585px) {
 .containerDireita{
 width: 30%;
 height: 80%;
@@ -195,7 +262,7 @@ font-size: 1rem;
 
  }
  
-@media (max-width: 1076px )and(min-width:451px) {
+@media (max-width: 1076px )and(min-width:1100px) {
     .text1{
         font-size: 35px;
     }

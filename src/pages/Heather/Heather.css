@@ -89,7 +89,7 @@
     }
 }
     
-@media screen and (max-width:420px){
+@media screen and (max-width:750px){
     .appbar{
         display: none;
     }
@@ -118,7 +118,7 @@
     } 
 }
 
-@media screen and (min-width:420px){
+@media screen and (min-width:750px){
    .menu{
         display: none;
         

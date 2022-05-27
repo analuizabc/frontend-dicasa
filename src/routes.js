@@ -12,9 +12,10 @@ function Routes() {
     return(
         <BrowserRouter>
           <Switch>
+
               
-              <Route path="/" component={UserFooter}/>
               <Route path="/" component={UserHeather}/>
+              <Route path="/" component={UserFooter}/>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/cardapio" component={Cardapio}/>
               <Route exact path="/cadastro" component={Cadastro}/>
